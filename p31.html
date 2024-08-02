@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>MARQUEE TAG...!</title>
+    </head>
+    <body>
+        <center>
+            <h1>Marquee tag..!</h1>
+            <p>the mar</p>
+        </center>
+        <marquee>this is marquee tag</marquee>
+        <marquee><a href="#">this is marquee</a></marquee>
+        <marquee bgcolor="red">this is marquee</marquee>
+        <br>
+        <h1>marque tag behavior attribute</h1>
+        <marquee behavior="alternate">marque tag behavior</marquee>
+        <marquee behavior="scroll">marque tag behavior</marquee>
+        <marquee behavior="slide" >marque tag behavior</marquee>
+        <hr><br>
+        <marquee behavior="alternate" direction=""><h1>marque tag direction attribute</h1></marquee>
+        <br>
+        <marquee behavior="" direction="right">marque tag direction attribute</marquee>
+        <br>
+        <marquee behavior="" direction="left">marque tag direction attribute</marquee>
+        <br>
+        <marquee behavior="" direction="up" height="50" bgcolor="red">marque tag direction attribute</marquee>
+        <br>
+        <marquee behavior="alternate" direction="down" height="50" bgcolor="green">marque tag direction attribute</marquee>
+        <br><hr><br>
+       
+        <h1>Marquee scrollamount attribute</h1>
+        <marquee  bgcolor="skyblue" scrollamount="1">this is marquee tag</marquee>
+        <br><br>
+        <marquee behavior="alternate" bgcolor="skyblue" scrollamount="20" id="test">this is marquee tag</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="10">this is marquee tag</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5">this is marquee tag</marquee>
+        <br><br>
+
+        <h1>marquee javascript code</h1>
+
+        <script>
+            document.getElementById("test").onmouseenter = function() {
+                document.getElementById('test').stop();
+            }
+
+            document.getElementById("test").onmouseleave = function() {
+                document.getElementById('test').start();
+            }
+       
+        </script>
+        
+
+
+    </body>
+</html>
